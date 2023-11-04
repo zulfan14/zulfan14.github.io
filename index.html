@@ -1,407 +1,776 @@
+<!--
+  Portafolio template
+  https://github.com/jaglux12/portafolio-template
+
+  Follow us 
+  @devsiderio - https://github.com/devsiderio
+  @jaglux12 - https://github.com/jaglux12
+-->
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Muhammad Zulfan</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
-  <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
-    media="print" onload="this.media='all'" />
-  <noscript>
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
-  </noscript>
-  <link href="css/font-awesome/css/all.min.css?ver=1.2.1" rel="stylesheet">
-  <link href="css/mdb.min.css?ver=1.2.1" rel="stylesheet">
-  <link href="css/aos.css?ver=1.2.1" rel="stylesheet">
-  <link href="css/main.css?ver=1.2.1" rel="stylesheet">
-  <noscript>
-    <style type="text/css">
-      [data-aos] {
-        opacity: 1 !important;
-        transform: translate(0) scale(1) !important;
-      }
-    </style>
-  </noscript>
-</head>
+  <head>
+    
+    <meta charset="utf-8"/>
+    <title>Mi portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<body class="bg-light" id="top">
-  <header class="d-print-none">
-    <div class="container text-center text-lg-left">
-      <div class="pt-4 clearfix">
-        <h1 class="site-title mb-0">Muhammad Zulfan</h1>
-        <div class="site-nav">
-          <nav role="navigation">
-            <ul class="nav justify-content-center">
-              <li class="nav-item"><a class="nav-link" href="#about" title="About"><span
-                    class="menu-title">About</span></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#skills" title="Skills"><span
-                    class="menu-title">Skills</span></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#experience" title="Experience"><span
-                    class="menu-title">Experience</span></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#education" title="Education"><span
-                    class="menu-title">Education</span></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#portfolio" title="Portfolio"><span
-                    class="menu-title">Portfolio</span></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#references" title="References"><span
-                    class="menu-title">References</span></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#contact" title="Contact"><span
-                    class="menu-title">Contact</span></a>
-              </li>
-            </ul>
-          </nav>
+    <!-- CDN - Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!-- CDN - Bootstrap Iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- CSS locales -->
+    <link rel="stylesheet" href="css/style-body.css" />
+    <link rel="stylesheet" href="css/style-header.css" />
+    <link rel="stylesheet" href="css/style-articulos.css" />
+    <link rel="stylesheet" href="css/style-skills.css" />
+
+  </head>
+
+  <body>
+
+    <!-- ========= Developer profile -->
+    <header class="container-fluid px-5 pt-5">
+     
+      <!-- Blank space -->
+      <div class="row d-block d-md-none mb-5">
+        <div class="d-flex justify-content-end">
         </div>
       </div>
-    </div>
-  </header>
-  <div class="page-content">
-    <div class="container">
-      <div class="resume-container">
-        <div class="shadow-1-strong bg-white my-5" id="intro">
-          <div class="bg-info text-white">
-            <div class="cover bg-image"><img src="images/header-background.jpg" />
-              <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);backdrop-filter: blur(2px);">
-                <div class="text-center p-5">
-                  <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong" src="images/profile.jpg"
-                      width="160" height="160" /></div>
-                  <div class="header-bio mt-3">
-                    <div data-aos="zoom-in" data-aos-delay="0">
-                      <h2 class="h1">Muhammad Zulfan</h2>
-                      <p>Back End Development</p>
-                    </div>
-                    <div class="header-social mb-3 d-print-none" data-aos="zoom-in" data-aos-delay="200">
-                      <nav role="navigation">
-                        <ul class="nav justify-content-center">
-                          <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/muhammad-zulfan/"
-                              target="blank" title="Linkedin"><i class="fab fa-linkedin"></i><span
-                                class="menu-title sr-only">Linkedin</span></a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/mhzulfan/?hl=id"
-                              target="blank" title="Instagram"><i class="fab fa-instagram"></i><span
-                                class="menu-title sr-only">Instagram</span></a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="https://github.com/zulfan14" target="blank"
-                              title="Github"><i class="fab fa-github"></i><span
-                                class="menu-title sr-only">Github</span></a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </div>
-                    <div class="d-print-none">
-                      <a class="btn btn-success btn-lg shadow-sm mt-1"
-                        href="https://api.whatsapp.com/send?phone=6282370385758" data-aos="fade-left"
-                        data-aos-delay="700">Whatsapp Me</a>
-                      <a class="btn btn-danger btn-lg shadow-sm mt-1 me-3" target="_blank"
-                        href="https://drive.google.com/file/d/1jl_FoJ3HBGKq4GUpoXmZa7uxJoh78OJ-/view?usp=sharing"
-                        data-aos="fade-right" data-aos-delay="700">Download CV</a>
-                    </div>
 
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shadow-1-strong bg-white my-5 p-5" id="about">
-          <div class="about-section">
-            <div class="row">
-              <div class="col-md-6">
-                <h2 class="h2 fw-light mb-4">About Me</h2>
-                <p>Hello! I’m Muhammad Zulfan. I am <strong> Web Developer </strong> , experienced in build app software
-                  by independently or together Team. Enthusiastic and high high for solve the problem project
-                  efficiently.
-                </p>
-              </div>
-              <div class="col-md-5 offset-lg-1">
-                <div class="row mt-2">
-                  <h2 class="h2 fw-light mb-4">Bio</h2>
-                  <div class="col-sm-5">
-                    <div class="pb-2 fw-bolder"><i class="far fa-calendar-alt pe-2 text-muted"
-                        style="width:24px;opacity:0.85;"></i> Age</div>
-                  </div>
-                  <div class="col-sm-7">
-                    <div class="pb-2">24</div>
-                  </div>
-                  <div class="col-sm-5">
-                    <div class="pb-2 fw-bolder"><i class="far fa-envelope pe-2 text-muted"
-                        style="width:24px;opacity:0.85;"></i> Email</div>
-                  </div>
-                  <div class="col-sm-7">
-                    <div class="pb-2">muhammadzulfan48@gmail.com</div>
-                  </div>
-                  <div class="col-sm-5">
-                    <div class="pb-2 fw-bolder"><i class="fas fa-phone pe-2 text-muted"
-                        style="width:24px;opacity:0.85;"></i> Phone</div>
-                  </div>
-                  <div class="col-sm-7">
-                    <div class="pb-2">+62 823-7038-5758</div>
-                  </div>
-                  <div class="col-sm-5">
-                    <div class="pb-2 fw-bolder"><i class="fas fa-map-marker-alt pe-2 text-muted"
-                        style="width:24px;opacity:0.85;"></i> Address</div>
-                  </div>
-                  <div class="col-sm-7">
-                    <div class="pb-2">Banda Aceh , Indonesia</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shadow-1-strong bg-white my-5 p-5" id="skills">
-          <div class="skills-section">
-            <h2 class="h2 fw-light mb-4">Professional Skills</h2>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="mb-3"><span class="fw-bolder">PHP</span>
-                  <div class="progress my-2 rounded" style="height: 20px">
-                    <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100"
-                      data-aos-anchor=".skills-section" style="width: 80%;" aria-valuenow="95" aria-valuemin="0"
-                      aria-valuemax="100">Expert</div>
-                  </div>
-                </div>
-                <div class="mb-3"><span class="fw-bolder">HTML, CSS, JS</span>
-                  <div class="progress my-2 rounded" style="height: 20px">
-                    <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200"
-                      data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100">Master</div>
-                  </div>
-                </div>
-                <div class="mb-3"><span class="fw-bolder">Mysql</span>
-                  <div class="progress my-2 rounded" style="height: 20px">
-                    <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300"
-                      data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                      aria-valuemax="100">Master</div>
-                  </div>
-                </div>
-                <div class="mb-3"><span class="fw-bolder">WordPress</span>
-                  <div class="progress my-2 rounded" style="height: 20px">
-                    <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300"
-                      data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                      aria-valuemax="100">Advance</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="mb-3"><span class="fw-bolder">Codeigniter</span>
-                  <div class="progress my-2 rounded" style="height: 20px">
-                    <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right"
-                      data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 85%" aria-valuenow="95"
-                      aria-valuemin="0" aria-valuemax="100">Expert</div>
-                  </div>
-                </div>
-                <div class="mb-3"><span class="fw-bolder">JavaScript</span>
-                  <div class="progress my-2 rounded" style="height: 20px">
-                    <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right"
-                      data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="95"
-                      aria-valuemin="0" aria-valuemax="100">Master</div>
-                  </div>
-                </div>
-                <div class="mb-3"><span class="fw-bolder">Microsoft Office</span>
-                  <div class="progress my-2 rounded" style="height: 20px">
-                    <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right"
-                      data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90"
-                      aria-valuemin="0" aria-valuemax="100">Expert</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shadow-1-strong bg-white my-5 p-5" id="experience">
-          <div class="work-experience-section">
-            <h2 class="h2 fw-light mb-4">Work Experience</h2>
-            <div class="timeline">
-              <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
-                <div class="timeline-head px-4 pt-3">
-                  <div class="h5">Intern <span class="text-muted h6">PT. PERTA ARUN GAS. – IT Division</span>
-                  </div>
-                </div>
-                <div class="timeline-body px-4 pb-4">
-                  <div class="text-muted text-small mb-3">
-                    June, 2019 - October, 2019</div>
-                  <div>Assisting the Administration Process in the IT division, PT. first
-                    Arun Gas. Creating Employee Payroll Information System at PT. Perta Arun Gas</div>
-                </div>
-              </div>
-              <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="200">
-                <div class="timeline-head px-4 pt-3">
-                  <div class="h5">GIS Assistant <span class="text-muted h6">PT. DUNIA MITA RASEUKI</span></div>
-                </div>
-                <div class="timeline-body px-4 pb-4">
-                  <div class="text-muted text-small mb-3">December, 2020 - June, 2021</div>
-                  <div>Help Processing data on ARCGIS for Seuruway District Mapping activities Aceh Tamiang District.
-                  </div>
-                </div>
-              </div>
-              <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="400">
-                <div class="timeline-head px-4 pt-3">
-                  <div class="h5">Programmer Staff <span class="text-muted h6">Universitas Ubudiyah Indonesia</span>
-                  </div>
-                </div>
-                <div class="timeline-body px-4 pb-4">
-                  <div class="text-muted text-small mb-3">August , 2021 - August, 2022 </div>
-                  <div>Building a Website for Ubudiyah University Indonesia.
-                    Ubudiyah University Website Maintenance Indonesia. Making Reports Related to ICT Ubudiyah University
-                    Indonesia.</div>
-                </div>
-              </div>
-              <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="400">
-                <div class="timeline-head px-4 pt-3">
-                  <div class="h5">Web Developer <span class="text-muted h6">PT Klik Data Indonesia</span>
-                  </div>
-                </div>
-                <div class="timeline-body px-4 pb-4">
-                  <div class="text-muted text-small mb-3">September, 2022 - April, 2023 </div>
-                  <div>Contributed to KlikMedic Development: Played a key role in developing and maintaining the
-                    KlikMedic platform, including collaborating on crafting web profiles for partner hospitals. Involved
-                    in feature development, enhancements, and optimizations to ensure an optimal user experience</div>
-                </div>
-              </div>
-              <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="400">
-                <div class="timeline-head px-4 pt-3">
-                  <div class="h5">Backend Developer <span class="text-muted h6">Made Indonesia</span>
-                  </div>
-                </div>
-                <div class="timeline-body px-4 pb-4">
-                  <div class="text-muted text-small mb-3">Mei, 2023 - Present </div>
-                  <div>I am actively involved as a backend developer in crafting websites within a software hosting
-                    service environment.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shadow-1-strong bg-white my-5 p-5" id="education">
-          <div class="education-section">
-            <h2 class="h2 fw-light mb-4">Education</h2>
-            <div class="timeline">
-              <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="0">
-                <div class="timeline-head px-4 pt-3">
-                  <div class="h5">BACHELOR DEGREE |<span class="text-muted h6"> Informatic Engineering Polytechnic State
-                      Lhokseumawe</span> </div>
-                </div>
-                <div class="timeline-body px-4 pb-4">
-                  <div class="text-muted text-small mb-3">2016 - 2020</div>
-                </div>
-              </div>
-              <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="200">
-                <div class="timeline-head px-4 pt-3">
-                  <div class="h5">SENIOR HIGH SCHOOL |<span class="text-muted h6"> Science major
-                      Senior High School 1 Sigli</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shadow-1-strong bg-white my-5 p-5 d-print-none" id="portfolio">
-          <div class="portfolio-section">
-            <h2 class="h2 fw-light mb-4">Portfolio</h2>
-            <div class="row g-0">
-              <div class="col-md-6"><a href="https://sipenmasing.uui.ac.id/" target="_blank"><img class="img-fluid"
-                    src="images/sipenmasing.jpg" width="800" height="500" /></a>
-              </div>
-              <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-                <div class="m-4 mt-md-2">
-                  <p class="text-teal text-small">Fullstack / HTML / CSS / JavaScript/ codeigniter</p>
-                  <h3>Sipenmasing UUI</h3>
-                  <p class="text-muted">Sipenmasing UUI is, a system of foreign student admissions for the University of
-                    Ubudiyah Indonesia></p>
-                </div>
-              </div>
-            </div>
-            <br>
-            <div class="row g-0">
-              <div class="col-md-6"><a href="http://lapor.uui.ac.id/" target="_blank"><img class="img-fluid"
-                    src="images/portofolio.JPG" width="800" height="500" /></a></div>
-              <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-                <div class="m-4 mt-md-2">
-                  <p class="text-teal text-small">Fullstack / HTML / CSS / JavaScript/ codeigniter</p>
-                  <h3>Lapor UUI</h3>
-                  <p class="text-muted">LAPOR UUI is a service for submitting all student aspirations and complaints
-                    through the website . LAPOR UUI is managed directly by the Chancellor of the University of Ubudiyah
-                    Indonesia.</p>
-                </div>
-              </div>
-            </div>
-            <div class="shadow-1-strong bg-white my-5 p-5" id="contact">
-              <div class="contant-section">
-                <h2 class="h2 fw-light text mb-4">Contact</h2>
-                <div class="row mb-4">
-                  <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
-                    <div class="mt-1">
-                      <div class="h6"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i>
-                        +62 823-7038-5758</div>
-                      <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i>
-                        muhammadzulfan48@gmail.com</div>
-                    </div>
-                    <div class="mt-5 d-print-none">
-                      <form action="https://formspree.io/f/xdobbndd" method="POST" target="blank">
-                        <div class="form-outline mb-4">
-                          <input type="email" id="email" name="email" class="form-control" required />
-                          <label class="form-label" for="email">Email address</label>
-                        </div>
-                        <div class="form-outline mb-4">
-                          <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4"
-                            required></textarea>
-                          <label class="form-label" for="message">Message</label>
-                        </div>
-                        <button class="btn btn-info btn-block mb-4" type="submit">Send</button>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-7 d-print-none" data-aos="zoom-in" data-aos-delay="100">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d10404.843203097003!2d95.92491420479203!3d5.346191578273249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMjAnNDYuMSJOIDk1wrA1NSc0OC44IkU!5e0!3m2!1sid!2sid!4v1692528520570!5m2!1sid!2sid"
-                      width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <!-- Foto de perfil -->
+      <div class="row d-block d-md-none justify-content-center px-5 mb-3">
+        <div class="col-12 d-flex justify-content-center">
+          <div
+            class="d-flex justify-content-center rounded-circle overflow-hidden circuloPerfil">
+            <img src="images/profile.png" alt="" style="width: 90px"/>
           </div>
         </div>
       </div>
-      <footer class="pt-4 pb-4 text-muted text-center d-print-none">
-        <div class="container">
-          <div class="my-3">
-            <div class="h4">Muhammad Zulfan</div>
-            <div class="footer-nav">
-              <nav role="navigation">
-                <ul class="nav justify-content-center">
-                  <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/muhammad-zulfan/"
-                      target="blank" title=" Linkedin"><i class="fab fa-linkedin"></i><span
-                        class="menu-title sr-only">Linkedin</span></a>
-                  </li>
-                  <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/mhzulfan/?hl=id"
-                      target="blank" title="Instagram"><i class="fab fa-instagram"></i><span
-                        class="menu-title sr-only">Instagram</span></a>
-                  </li>
-                  <li class="nav-item"><a class="nav-link" href="https://github.com/zulfan14" target="blank"
-                      title=" Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
-                  </li>
-                </ul>
-              </nav>
+
+      <!-- Nombre del desarrollador -->
+      <div class="row d-block d-md-none justify-content-center">
+        <div class="col-12 d-flex justify-content-center flex-column">
+          <h1 class="Nombre mt-3 text-center">Muhammad Zulfan</h1>
+          <label class="Trabajo text-center">Backend Developer</label>
+        </div>
+      </div>
+    </header>
+    <!-- ========= -->
+
+    <!-- Body main content -->
+    <!-- ======== Diseño para dispositivos móviles ======== -->
+    <section class="d-block d-md-none">
+      <article class="px-5 pb-5">
+        <!-- Información del desarrollador -->
+        <div
+          class="d-block d-md-none justify-content-center py-4 d-flex flex-row mt-4 rounded">
+          <div class="d-flex flex-column">
+            <h1 class="Titulo text-center">5</h1>
+            <label class="SubTitulos text-center w-100">
+              Years of Work <br/> Experience
+            </label>
+          </div>
+          <div class="d-flex flex-column mx-3">
+            <h1 class="Titulo text-center" id="ages">25</h1>
+            <label class="SubTitulos text-center w-100">
+              Age</label>
+          </div>
+        </div>
+
+        <!-- Descargar curriculum y redes sociales -->
+        <div
+          class="d-block d-md-none d-flex flex-row justify-content-center py-2 px-2">
+          <div class="d-flex justify-content-center">
+            <a
+              href="https://drive.google.com/file/d/1jl_FoJ3HBGKq4GUpoXmZa7uxJoh78OJ-/view?usp=sharing"
+              download
+              rel="noopener noreferrer"
+              target="_blank">
+              <button
+                type="button"
+                name="button"
+                class="btn btn-primary p-3 me-3 SubTitulos"
+                style="font-size: 0.9rem">
+                Download Cv
+                <i class="bi bi-download" style="font-size: 0.9rem"></i>
+              </button>
+            </a>
+          </div>
+
+          <div class="d-flex justify-content-center align-items-center">
+            <a
+              href="https://www.instagram.com/mhzulfan/?hl=id"
+              target="_blank"
+              type="button"
+              class="btn btn-outline-primary">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a
+              href="mailto:muhammadzulfan48@gmail.com"
+              type="button"
+              class="btn btn-outline-primary ms-1">
+              <i class="bi bi-envelope">
+              </i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Barra de tabs para moverse por el contenido de la página web -->
+        <nav class="d-flex justify-content-center d-block d-md-none">
+          <div
+            class="nav nav-tabs my-4 px-4 d-flex justify-content-center border-0 py-3"
+            id="nav-tab"
+            role="tablist">
+            <button
+              class="nav-link active p-2 px-3 rounded border-0"
+              id="nav-proyectos-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-proyectos"
+              type="button"
+              role="tab"
+              aria-controls="nav-proyectos"
+              aria-selected="true">
+              Projects
+            </button>
+
+            <button
+              class="nav-link p-3 px-3 rounded ms-2 border-0"
+              id="nav-habilidades-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-habilidades"
+              type="button"
+              role="tab"
+              aria-controls="nav-habilidades"
+              aria-selected="false">
+              Skills
+            </button>
+          </div>
+        </nav>
+
+        <!-- Paneles que contienen la información de los tabs -->
+        <div class="tab-content d-block d-md-none" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-proyectos"
+            role="tabpanel"
+            aria-labelledby="nav-proyectos-tab"
+            tabindex="0">
+            <!-- Muestra los proyectos en dispositivos pequeños -->
+            <section class="d-block d-sm-none">
+              <div class="d-flex justify-content-center">
+                <div
+                  class="proyRemeras d-flex flex-column overflow-hidden"
+                  style="width: 280px; height: 200px">
+                </div>
+                <div class="text-light position-absolute mt-5">
+                  <h4 class="SubTitulos" style="font-size: 1rem">Fullstack Web Developer</h4>
+                  <h3 class="Titulo">Sipenmasing UUI</h3>
+                  <a
+                    href="https://sipenmasing.uui.ac.id/"
+                    target="_blank"
+                    type="button"
+                    name="button"
+                    class="btn btn-primary rounded-pill">
+                    <i class="bi bi-link"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center mt-4">
+                <div
+                  class="proyAutos d-flex flex-column overflow-hidden"
+                  style="width: 280px; height: 200px">
+                </div>
+                <div class="text-light position-absolute mt-5">
+                  <h4 class="SubTitulos" style="font-size: 1rem">Fullstack Web Developer</h4>
+                  <h3 class="Titulo">Lapor UUI</h3>
+                  <a
+                    href="http://lapor.uui.ac.id/"
+                    target="_blank"
+                    type="button"
+                    name="button"
+                    class="btn btn-primary rounded-pill">
+                    <i class="bi bi-link"></i>
+                  <a/>
+                </div>
+              </div>
+            </section>
+
+            <!-- Muestra los proyectos en dispositivos medianos -->
+            <section class="d-none d-sm-block d-md-none">
+              <div class="row">
+                <div class="col-sm-6 d-flex justify-content-center">
+                  <div
+                    class="proyRemeras d-flex flex-column overflow-hidden"
+                    style="width: 400px; height: 200px">
+                  </div>
+                  <div class="text-light position-absolute mt-5">
+                    <h4 class="SubTitulos" style="font-size: 1rem">
+                      Fullstack Web Developer
+                    </h4>
+                    <h3 class="Titulo">Sipenmasing UUI</h3>
+                    <a
+                      href="https://sipenmasing.uui.ac.id/"
+                      target="_blank"
+                      type="button"
+                      name="button"
+                      class="btn btn-primary rounded-pill">
+                      <i class="bi bi-link"></i>
+                    </>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 d-flex justify-content-center">
+                  <div
+                    class="proyAutos d-flex flex-column overflow-hidden"
+                    style="width: 400px; height: 200px">
+                  </div>
+                  <div class="text-light position-absolute mt-5">
+                    <h4 class="SubTitulos" style="font-size: 1rem">
+                      Fullstack Web Developer
+                    </h4>
+                    <h3 class="Titulo">Lapor UUI</h3>
+                    <a
+                      href="http://lapor.uui.ac.id/"
+                      target="_blank"
+                      type="button"
+                      name="button"
+                      class="btn btn-primary rounded-pill">
+                      <i class="bi bi-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- Muestra las habilidades del programador en dispositivos pequeños -->
+          <div
+            class="tab-pane fade"
+            id="nav-habilidades"
+            role="tabpanel"
+            aria-labelledby="nav-habilidades-tab"
+            tabindex="0">
+            <section class="d-block d-sm-none">
+
+              <div class="d-flex justify-content-center mt-4">
+                <div class="skills__area">
+
+                  <div class="skills__box">
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">PHP</h3>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">HTML, CSS</h3>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">MySQL</h3>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">WordPress</h3>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Codeigniter</h3>
+                        </div>
+                      </div>
+                      
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Laravel</h3>
+                        </div>
+                      </div>
+                      
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">JavaScript</h3>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Apache</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- Licencia de la página web -->
+        <div
+          class="d-block d-md-none d-flex flex-column align-items-center mt-5">
+          <p class="text-light SubTitulos">
+            Este sitio web está bajo la
+            <a
+              href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
+              class="Links">
+              Licencia Pública General de GNU 2.0
+            </a>
+          </p>
+        </div>
+      </article>
+    </section>
+    <!-- ======== Cierre para dispositivos móviles ======== -->
+
+    <!-- ======== Apertura para tablets y computadoras ======== -->
+    <section class="d-none d-md-block pt-5">
+      <nav class="navbar navbar-expand fixed-top px-5 barra-mobiles">
+        <div class="container-fluid mt-3 mb-3 px-5">
+          <a class="TituloBrand" href="#"> Muhammad Zulfan </a>
+
+          <div class="navbar-nav">
+            <a class="TitulosNav" href="#"> Home </a>
+
+            <a class="TitulosNav" href="#sobreMi"> About me </a>
+
+            <a class="TitulosNav" href="#habilidades"> Skills </a>
+
+            <a class="TitulosNav" href="#proyectos"> Projects </a>
+
+            <a class="TitulosNav" href="#contacto"> Contact </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Muestra la información principal del desarrollador -->
+      <div
+        id="inicio"
+        class="mx-5 py-5 d-flex"
+        style="margin-top: 100px; margin-bottom: 100px">
+        <div
+          class="w-25 d-flex justify-content-center flex-column align-items-center">
+          <a href="https://github.com/zulfan14" target="_blank">
+            <i
+              class="bi bi-github icono_contacto"
+              style="font-size: 30px;">
+            </i>
+          </a>
+          <a href="https://www.instagram.com/mhzulfan/?hl=id" target="_blank" class="my-2">
+            <i
+              class="bi bi-instagram icono_contacto_tel"
+              style="font-size: 30px;">
+            </i>
+          </a>
+          <a href="https://www.linkedin.com/in/muhammad-zulfan/" target="_blank">
+            <i
+              class="bi bi-linkedin icono_contacto_lin"
+              style="font-size: 30px;">
+            </i>
+          </a>
+        </div>
+
+        <div class="w-75 d-flex pt-4 py-5 mb-5">
+          <div class="w-50">
+            <h1 class="TituloQuienSoy">Hello, I'm</h1>
+            <h1 class="TituloQuienSoy">Muhammad Zulfan <i class="bi bi-code-slash"></i></h1>
+            <h2 class="SubTitulosQuienSoy text-start">Backend Developer</h2>
+            <p class="ParrafoQuienSoy text-start pe-5">
+              I am a full-time backend developer, proficient in various technologies, and highly passionate about programming.
+            </p>
+
+            <a href="#contacto">
+              <button
+                type="button"
+                name="button"
+                class="btn btn-primary p-3 me-3 SubTitulos"
+                style="font-size: 0.9rem;">
+                Contact Me
+                <i
+                  class="bi bi-caret-right-fill ms-3"
+                  style="font-size: 0.9rem;">
+                </i>
+              </button>
+            </a>
+          </div>
+          <div class="home_img">
+            <div
+              class="d-flex justify-content-center rounded-circle overflow-hidden circuloPerfilGrande">
+              <img src="images/profile.png" alt="" style="width: 225px" />
             </div>
           </div>
         </div>
-      </footer>
-      <script src="scripts/mdb.min.js?ver=1.2.1"></script>
-      <script src="scripts/aos.js?ver=1.2.1"></script>
-      <script src="scripts/main.js?ver=1.2.1"></script>
-</body>
+      </div>
 
+      <!-- Sección Sobre mí -->
+      <h2 id="sobreMi">About Me</h2>
+      <div
+        id="inicio"
+        class="mx-5 py-5 d-flex"
+        style="margin-top: 100px; margin-bottom: 100px">
+        <div class="sobreMi_container d-flex justify-content-center">
+          <div class="img-sobreMi">
+            <img
+              src="images/profile.png"
+              alt=""
+              class="circuloPerfilGrande img-sobreMi-estilo"/>
+          </div>
+          <div class="sobreMi-data w-50">
+            <p>
+              Hello! I'm Muhammad Zulfan.<br/>
+              I am a <strong>Backend Developer</strong> with experience in building software applications, either independently or as part of a team. I am highly enthusiastic and dedicated to efficiently solving project problems, particularly in the realm of backend development.
+            </p>
+            <div class="sobreMi-info">
+              <div class="sobreMi-info-box">
+                <span class="Titulo d-block text-center">3</span>
+                <span class="SubTitulos d-block text-center"
+                  >Years of Work Experience
+                </span>
+              </div>
+              <div class="sobreMi-info-box">
+                <span class="Titulo d-block text-center" id="age">25</span>
+                <span class="SubTitulos d-block text-center"
+                  >Age
+                </span>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <a
+                href="https://drive.google.com/file/d/1jl_FoJ3HBGKq4GUpoXmZa7uxJoh78OJ-/view?usp=sharing"
+                download
+                rel="noopener noreferrer"
+                target="_blank">
+                <button
+                  type="button"
+                  name="button"
+                  class="btn btn-primary p-3 me-3 SubTitulos"
+                  style="font-size: 0.9rem">
+                  Download Cv
+                  <i class="bi bi-download" style="font-size: 0.9rem"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Habilidades -->
+
+      <h2 id="habilidades">Skills</h2>
+      <div
+        class="mx-5 py-5 d-flex justify-content-center"
+        style="margin-top: 100px; margin-bottom: 100px">
+
+        <!-- Desarrollo Backend -->
+
+        <div class="d-flex justify-content-center">
+          <div class="skills__area">
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)">
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">PHP</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)">
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">HTML, CSS, JS</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)">
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">MySQL</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)">
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">WordPress</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)">
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">Codeigniter</h3>
+                  </div>
+                </div>
+                
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)">
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">Laravel</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)">
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">JavaScript</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)">
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">Apache</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección Proyectos -->
+
+      <h2 id="proyectos">Projects</h2>
+      <div
+        class="mx-5 py-5 d-flex justify-content-center"
+        style="margin-top: 100px; margin-bottom: 100px">
+        <div class="d-flex justify-content-center" style="margin-inline: 2%">
+          <div
+            class="proyRemeras d-flex flex-column overflow-hidden"
+            style="width: 400px; height: 200px"
+          ></div>
+          <div class="text-light position-absolute mt-5">
+            <h4 class="SubTitulos" style="font-size: 1rem">Fullstack Web Developer</h4>
+            <h3 class="Titulo">Sipenmasing UUI</h3>
+            <a
+              href="https://sipenmasing.uui.ac.id/"
+              target="_blank"
+              type="button"
+              name="button"
+              class="btn btn-primary rounded-pill">
+              <i class="bi bi-link"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center" style="margin-inline: 2%">
+          <div
+            class="proyAutos d-flex flex-column overflow-hidden"
+            style="width: 400px; height: 200px">
+          </div>
+          <div class="text-light position-absolute mt-5">
+            <h4 class="SubTitulos" style="font-size: 1rem">Fullstack Web Developer</h4>
+            <h3 class="Titulo">Lapor UUI</h3>
+            <a
+              href="http://lapor.uui.ac.id/"
+              target="_blank"
+              type="button"
+              name="button"
+              class="btn btn-primary rounded-pill">
+              <i class="bi bi-link"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección Contacto -->
+
+      <h2 id="contacto">Contact Me</h2>
+      <div
+        class="mx-5 py-5 d-flex justify-content-center"
+        style="margin-top: 100px; margin-bottom: 100px">
+        <div class="d-flex grid">
+          <div class="justify-content-center">
+            <div class="d-flex grid mb-3">
+              <i class="bi bi-envelope"></i>
+              <div class="d-block">
+                <h3 class="Titulo">Email</h3>
+                <span class="SubTitulos">muhammadzulfan48@gmail.com</span>
+              </div>
+            </div>
+            <div class="d-flex grid">
+              <i class="bi bi-geo-alt"></i>
+
+              <div class="d-block">
+                <h3 class="Titulo">Location</h3>
+                <span class="SubTitulos">Indonesia</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <form
+              action="https://formspree.io/f/xdobbndd"
+              method="POST"
+              name="contact"
+              id="ContactForm"
+              class="contact__form grid justify-content-center"
+              data-netlify-recaptcha="true"
+              data-netlify="true">
+              <div class="grid">
+                <div class="contact__content">
+                  <label for="" class="SubTitulos">Name</label>
+                  <input
+                    name="name"
+                    type="text"
+                    id="name"
+                    class="contact__name"/>
+                </div>
+                <div class="contact__content">
+                  <label for="" class="SubTitulos">Email</label>
+                  <input
+                    name="email"
+                    type="email"
+                    id="email"
+                    class="contact__email"/>
+                </div>
+              </div>
+              <div class="contact__content">
+                <label for="" class="SubTitulos">Message</label>
+                <textarea
+                  name="message"
+                  id=""
+                  cols="0"
+                  rows="7"
+                  id="msg"
+                  class="contact__msg">
+                </textarea>
+              </div>
+              <div data-netlify-recaptcha="true"></div>
+              <div>
+                <button
+                  type="submit"
+                  name="button"
+                  class="btn btn-primary p-3 me-3 SubTitulos"
+                  id="submitButton"
+                  style="font-size: 0.9rem">
+                  Send Message
+                  <i
+                    class="bi bi-caret-right-fill ms-3"
+                    style="font-size: 0.9rem">
+                  </i>
+                </button>
+              </div>
+              <div id="status" class="success"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <p class="text-light SubTitulos">
+          Este sitio web está bajo la
+          <a
+            href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
+            class="Links">
+            Licencia Pública General de GNU 2.0
+          </a>
+        </p>
+      </div>
+    </section>
+    <!-- ======== Cierre para tablets y computadoras ======== -->
+  
+    <!-- JavaScript with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous">
+    </script>
+
+
+
+  </body>
 </html>
