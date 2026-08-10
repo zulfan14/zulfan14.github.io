@@ -1,270 +1,191 @@
 /**
-* Template Name: MyResume
-* Updated: Jan 29 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function() {
-  "use strict";
+ * Portfolio — Muhammad Zulfan
+ * Redesigned: Aug 2026
+ * Simplified JS with modern APIs
+ */
+(function () {
+  'use strict';
 
-  /**
-   * Easy selector helper function
-   */
-  const select = (el, all = false) => {
-    el = el.trim()
-    if (all) {
-      return [...document.querySelectorAll(el)]
+  /* ============================================================
+     Utilities
+     ============================================================ */
+  const $ = (sel, ctx = document) => ctx.querySelector(sel);
+  const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
+
+  /* ============================================================
+     Preloader
+     ============================================================ */
+  window.addEventListener('load', () => {
+    const preloader = $('#preloader');
+    if (preloader) {
+      preloader.style.opacity = '0';
+      setTimeout(() => preloader.remove(), 500);
+    }
+  });
+
+  /* ============================================================
+     Auto-calculate Age (Birthday: 06 November 1998)
+     ============================================================ */
+  function calculateAge() {
+    const birthday = new Date(1998, 10, 6); // Month is 0-indexed, so 10 = November
+    const today = new Date();
+    let age = today.getFullYear() - birthday.getFullYear();
+    const monthDiff = today.getMonth() - birthday.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthday.getDate())) {
+      age--;
+    }
+    const el = $('#autoAge');
+    if (el) el.textContent = age + ' years old';
+  }
+  calculateAge();
+
+  /* ============================================================
+     Footer Year
+     ============================================================ */
+  const footerYear = $('#footerYear');
+  if (footerYear) footerYear.textContent = new Date().getFullYear();
+
+  /* ============================================================
+     Navbar — Scroll Effects
+     ============================================================ */
+  const navbar = $('#navbar');
+  const navLinks = $$('#navbar .nav-links a');
+
+  function onNavScroll() {
+    if (window.scrollY > 60) {
+      navbar.classList.add('scrolled');
     } else {
-      return document.querySelector(el)
+      navbar.classList.remove('scrolled');
     }
   }
+  window.addEventListener('scroll', onNavScroll, { passive: true });
+  onNavScroll();
 
-  /**
-   * Easy event listener function
-   */
-  const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
-    if (selectEl) {
-      if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
-      } else {
-        selectEl.addEventListener(type, listener)
+  /* ============================================================
+     Navbar — Active Link on Scroll
+     ============================================================ */
+  const sections = $$('section[id]');
+
+  function updateActiveNav() {
+    const scrollY = window.scrollY + 200;
+    sections.forEach((section) => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const id = section.getAttribute('id');
+      const link = $(`#navbar .nav-links a[href="#${id}"]`);
+      if (link) {
+        if (scrollY >= top && scrollY < top + height) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
       }
-    }
-  }
-
-  /**
-   * Easy on scroll event listener 
-   */
-  const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
-  }
-
-  /**
-   * Navbar links active state on scroll
-   */
-  let navbarlinks = select('#navbar .scrollto', true)
-  const navbarlinksActive = () => {
-    let position = window.scrollY + 200
-    navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
-      if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
-      } else {
-        navbarlink.classList.remove('active')
-      }
-    })
-  }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
-
-  /**
-   * Scrolls to an element with header offset
-   */
-  const scrollto = (el) => {
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos,
-      behavior: 'smooth'
-    })
-  }
-
-  /**
-   * Back to top button
-   */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
-
-  /**
-   * Mobile nav toggle
-   */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('body').classList.toggle('mobile-nav-active')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
-
-  /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
-  on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
-
-      let body = select('body')
-      if (body.classList.contains('mobile-nav-active')) {
-        body.classList.remove('mobile-nav-active')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
-      }
-      scrollto(this.hash)
-    }
-  }, true)
-
-  /**
-   * Scroll with ofset on page load with hash links in the url
-   */
-  window.addEventListener('load', () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash)
-      }
-    }
-  });
-
-  /**
-   * Preloader
-   */
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
     });
   }
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  window.addEventListener('load', updateActiveNav);
 
-  /**
-   * Hero type effect
-   */
-  const typed = select('.typed')
-  if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
-  }
-
-  /**
-   * Skills animation
-   */
-  let skilsContent = select('.skills-content');
-  if (skilsContent) {
-    new Waypoint({
-      element: skilsContent,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = select('.progress .progress-bar', true);
-        progress.forEach((el) => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%'
-        });
-      }
-    })
-  }
-
-  /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
-      });
-
-      let portfolioFilters = select('#portfolio-flters li', true);
-
-      on('click', '#portfolio-flters li', function(e) {
+  /* ============================================================
+     Smooth Scroll for .scrollto Links
+     ============================================================ */
+  $$('.scrollto').forEach((link) => {
+    link.addEventListener('click', function (e) {
+      const target = $(this.getAttribute('href'));
+      if (target) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
-
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
-      }, true);
-    }
-
+        // Close mobile nav if open
+        const navLinksEl = $('#navLinks');
+        const toggleBtn = $('#mobileNavToggle');
+        if (navLinksEl.classList.contains('active')) {
+          navLinksEl.classList.remove('active');
+          toggleBtn.querySelector('i').className = 'bi bi-list';
+        }
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
   });
 
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
+  /* ============================================================
+     Mobile Nav Toggle
+     ============================================================ */
+  const mobileToggle = $('#mobileNavToggle');
+  const navLinksContainer = $('#navLinks');
 
-  /**
-   * Initiate portfolio details lightbox 
-   */
-  const portfolioDetailsLightbox = GLightbox({
-    selector: '.portfolio-details-lightbox',
-    width: '90%',
-    height: '90vh'
-  });
+  if (mobileToggle) {
+    mobileToggle.addEventListener('click', () => {
+      navLinksContainer.classList.toggle('active');
+      const icon = mobileToggle.querySelector('i');
+      if (navLinksContainer.classList.contains('active')) {
+        icon.className = 'bi bi-x-lg';
+      } else {
+        icon.className = 'bi bi-list';
+      }
+    });
+  }
 
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
+  /* ============================================================
+     Back to Top
+     ============================================================ */
+  const backToTop = $('#backToTop');
+  if (backToTop) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        backToTop.classList.add('active');
+      } else {
+        backToTop.classList.remove('active');
+      }
+    }, { passive: true });
+
+    backToTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* ============================================================
+     Scroll Reveal (Intersection Observer)
+     ============================================================ */
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
     },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
+    {
+      threshold: 0.1,
+      rootMargin: '0px 0px -40px 0px',
     }
-  });
+  );
 
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
+  $$('.reveal').forEach((el) => revealObserver.observe(el));
+
+  /* ============================================================
+     Typed.js — Hero Typing Effect
+     ============================================================ */
+  const typedEl = $('.typed');
+  if (typedEl && typeof Typed !== 'undefined') {
+    const items = typedEl.getAttribute('data-typed-items');
+    if (items) {
+      new Typed('.typed', {
+        strings: items.split(','),
+        loop: true,
+        typeSpeed: 80,
+        backSpeed: 40,
+        backDelay: 2500,
+      });
     }
-  });
+  }
 
-  /**
-   * Animation on scroll
-   */
-  window.addEventListener('load', () => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    })
-  });
+  /* ============================================================
+     GLightbox — Portfolio Lightbox
+     ============================================================ */
+  if (typeof GLightbox !== 'undefined') {
+    GLightbox({
+      selector: '.portfolio-lightbox',
+    });
+  }
 
-  /**
-   * Initiate Pure Counter 
-   */
-  new PureCounter();
-
-})()
+})();

@@ -5,316 +5,456 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Muhammd Zulfan</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Muhammad Zulfan — Backend Developer & Operations Manager</title>
+  <meta name="description" content="Muhammad Zulfan is a Backend Developer and Operations Manager based in Banda Aceh, Indonesia. Skilled in PHP, Laravel, CodeIgniter, MySQL, JavaScript, and more.">
+  <meta name="keywords" content="Muhammad Zulfan, Backend Developer, Operations Manager, PHP, Laravel, CodeIgniter, Web Developer, Banda Aceh, Indonesia">
+  <meta name="author" content="Muhammad Zulfan">
 
   <!-- Favicons -->
   <link href="assets/img/Zulfan.png" rel="icon">
   <link href="assets/img/Zulfan.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <!-- Boxicons -->
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Glightbox -->
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Main CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyResume
-  * Updated: Jan 29 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
-
-  </header><!-- End Header -->
+  <!-- ======= Navbar ======= -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">MZ.</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#hero" class="scrollto active">Home</a>
+        <a href="#about" class="scrollto">About</a>
+        <a href="#skills" class="scrollto">Skills</a>
+        <a href="#experience" class="scrollto">Experience</a>
+        <a href="#portfolio" class="scrollto">Portfolio</a>
+      </div>
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </nav>
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Muhammad Zulfan</h1>
-      <p>I'm <span class="typed" data-typed-items="Backend Developer"></span></p>
-      <div class="social-links">
-        <a href="https://github.com/zulfan14" target="_blank" class="facebook"><i class="bx bxl-github"></i></a>
-        <a href="https://www.instagram.com/mhzulfan/?hl=id" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/muhammad-zulfan/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+  <section id="hero" class="hero-split">
+    <div class="container hero-container">
+      
+      <!-- Left Column -->
+      <div class="hero-left reveal">
+        <div class="hero-accent-line"></div>
+        <h1 class="hero-name">I'm <span class="gradient-text">Zulfan</span>,<br>a Web Developer</h1>
+        <p class="hero-role">I am a Backend Developer with experience in building software applications. I'm highly enthusiastic and dedicated to efficiently solve project problems.</p>
+        <a href="#about" class="btn-scroll-down scrollto" aria-label="Scroll down">
+          <i class="bx bx-chevron-down"></i>
+        </a>
       </div>
+
+      <!-- Center Column (Image) -->
+      <div class="hero-center reveal reveal-delay-1">
+        <img src="assets/img/bg-hero.png" alt="Muhammad Zulfan" class="hero-cutout">
+      </div>
+
+      <!-- Right Column -->
+      <div class="hero-right reveal reveal-delay-2">
+        <div class="hero-info-block">
+          <h5>ABOUT ME</h5>
+          <p>I am a Backend Developer with experience in building software applications, either independently or as part of a team.</p>
+          <a href="#about" class="hero-link scrollto">LEARN MORE <i class="bx bx-right-arrow-alt"></i></a>
+        </div>
+        
+        <div class="hero-info-divider"></div>
+
+        <div class="hero-info-block">
+          <h5>MY WORK</h5>
+          <p>A collection of web applications I've contributed to, showcasing my dedication to quality and excellence.</p>
+          <a href="#portfolio" class="hero-link scrollto">BROWSE PORTFOLIO <i class="bx bx-right-arrow-alt"></i></a>
+        </div>
+
+        <div class="hero-info-divider"></div>
+
+        <div class="hero-info-block">
+          <h5>FOLLOW ME</h5>
+          <div class="hero-social-mini">
+            <a href="https://github.com/zulfan14" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+            <a href="https://www.instagram.com/mhzulfan/?hl=id" target="_blank" rel="noopener"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-zulfan/" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section><!-- End Hero -->
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>I am a full-time backend developer, proficient in various technologies, and highly passionate about programming.</p>
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Backend Developer &<br>Operations Manager</h2>
         </div>
 
-        <div class="row">
-          <div class="col-lg-3">
-            <img src="assets/img/profile.jpeg" class="img-fluid" alt="">
+        <div class="about-grid">
+          <div class="about-image-wrapper reveal">
+            <img src="assets/img/profile.jpeg" class="about-image" alt="Muhammad Zulfan">
           </div>
-          <div class="col-lg-9 pt- pt-lg-0 content">
-            <h3>Backend Developer.</h3>
-            <p class="fst-italic">
-              I am a Backend Developer with experience in building software applications, either independently or as part of a team. I am highly enthusiastic and dedicated to efficiently solve project problems, particularly in the realm of backend development.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>06 November 1998</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+62 823 7038 5758</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Banda Aceh, Indonesia</span></li>
-                </ul>
+          <div class="about-text">
+            <p class="reveal">I am a Backend Developer with experience in building software applications, either independently or as part of a team. I am highly enthusiastic and dedicated to efficiently solve project problems, particularly in the realm of backend development.</p>
+
+            <div class="about-info-grid">
+              <div class="about-info-item reveal reveal-delay-1">
+                <i class="bx bx-map"></i>
+                <div>
+                  <span class="info-label">Location</span>
+                  <span class="info-value">Banda Aceh, Indonesia</span>
+                </div>
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>25</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Study:</strong> <span>Bachelor Of Technology Information</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>muhammadzulfan48@gmail.com</span></li>
-                </ul>
+              <div class="about-info-item reveal reveal-delay-2">
+                <i class="bx bx-envelope"></i>
+                <div>
+                  <span class="info-label">Email</span>
+                  <span class="info-value">muhammadzulfan48@gmail.com</span>
+                </div>
+              </div>
+              <div class="about-info-item reveal reveal-delay-3">
+                <i class="bx bx-cake"></i>
+                <div>
+                  <span class="info-label">Age</span>
+                  <span class="info-value" id="autoAge">—</span>
+                </div>
+              </div>
+              <div class="about-info-item reveal reveal-delay-4">
+                <i class="bx bx-book"></i>
+                <div>
+                  <span class="info-label">Degree</span>
+                  <span class="info-value">Bachelor of Technology Information</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </section><!-- End About Section -->
 
     <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Skills</h2>
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Tech Stack</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-desc">Technologies and tools I use to build robust backend systems and web applications.</p>
         </div>
 
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">HTML, CSS <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Mysql/Mariadb <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">WordPress <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
+        <div class="skills-grid">
+          <div class="skill-card reveal reveal-delay-1">
+            <div class="skill-icon"><i class="bx bxl-php"></i></div>
+            <span class="skill-name">PHP</span>
           </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Codeigniter <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Laravel<i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JQUERY <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Git <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
+          <div class="skill-card reveal reveal-delay-1">
+            <div class="skill-icon"><i class="bx bxl-javascript"></i></div>
+            <span class="skill-name">JavaScript</span>
           </div>
-
+          <div class="skill-card reveal reveal-delay-1">
+            <div class="skill-icon"><i class="bx bxl-nodejs"></i></div>
+            <span class="skill-name">Express.js</span>
+          </div>
+          <div class="skill-card reveal reveal-delay-2">
+            <div class="skill-icon"><i class="bx bxs-data"></i></div>
+            <span class="skill-name">MySQL</span>
+          </div>
+          <div class="skill-card reveal reveal-delay-2">
+            <div class="skill-icon"><i class="bx bxl-html5"></i></div>
+            <span class="skill-name">HTML & CSS</span>
+          </div>
+          <div class="skill-card reveal reveal-delay-3">
+            <div class="skill-icon"><i class="bx bxs-layer"></i></div>
+            <span class="skill-name">Laravel</span>
+          </div>
+          <div class="skill-card reveal reveal-delay-3">
+            <div class="skill-icon"><i class="bx bxs-flame"></i></div>
+            <span class="skill-name">CodeIgniter</span>
+          </div>
+          <div class="skill-card reveal reveal-delay-4">
+            <div class="skill-icon"><i class="bx bxl-jquery"></i></div>
+            <span class="skill-name">jQuery</span>
+          </div>
+          <div class="skill-card reveal reveal-delay-4">
+            <div class="skill-icon"><i class="bx bxl-wordpress"></i></div>
+            <span class="skill-name">WordPress</span>
+          </div>
+          <div class="skill-card reveal reveal-delay-1">
+            <div class="skill-icon"><i class="bx bxl-git"></i></div>
+            <span class="skill-name">Git</span>
+          </div>
+          <div class="skill-card reveal reveal-delay-2">
+            <div class="skill-icon"><i class="bx bxs-server"></i></div>
+            <span class="skill-name">REST API</span>
+          </div>
         </div>
-
       </div>
     </section><!-- End Skills Section -->
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Resume</h2>
+    <!-- ======= GitHub Section ======= -->
+    <section id="github" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Open Source</span>
+          <h2 class="section-title">GitHub Contributions</h2>
+          <p class="section-desc">My daily coding activity and open-source contributions.</p>
         </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Muhammad Zulfan</h4>
-              <ul>
-                <li>Banda Aceh, Indonesia</li>
-                <li>+62 823 7038 5758</li>
-                <li>muhammadzulfan48@gmail.com</li>
-              </ul>
+        <div class="github-stats-grid">
+          <!-- Heatmap Card -->
+          <div class="github-card reveal reveal-delay-1">
+            <div class="github-card-header">
+              <h5>GITHUB HEATMAP</h5>
+              <p>LIVE ACTIVITY</p>
             </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>BACHELOR OF TECHNOLOGY INFORMATION</h4>
-              <h5>August 2016 - August 2020</h5>
-              <p><em>Lhokseumawe State Polytechnic</em></p>
-              <p>A graduated from the State Polytechnic of Lhokseumawe majoring in Computer Engineering with a focus on programming. With a GPA of 3.48, I possess practical skills in software development. Ready to contribute to a development team with a deep understanding of algorithms and programming.</p>
+            <div class="github-card-body heatmap-body">
+              <img src="https://ghchart.rshah.org/0ea5e9/zulfan14" alt="Zulfan's GitHub Contribution Graph" />
             </div>
           </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Backend Developer</h4>
-              <h5>May 2023 - Present</h5>
-              <p><em>PT Pma Madeindonesia </em></p>
-              <ul>
-                <li>Responsible for designing, developing, and optimizing backend systems that underpin applications or platforms. Involves a deep understanding of functional requirements and application performance, as well as the implementation of efficient technical solutions to ensure a seamless user experience.</li>
-                <li>Executing the integration of external APIs to enhance application functionality and connectivity. Managing databases efficiently, including schema design, query optimization, and data security maintenance. Ensuring proper synchronization between frontend and backend for maximum interoperability.</li>
-                <li>Engaged in identifying and resolving backend-related issues, both performance and functionality-related. Collaborating with development teams and stakeholders to identify potential areas for performance improvement and efficiency, and implementing appropriate solutions to enhance system responsiveness and reliability.</li>
-              </ul>
+          
+          <!-- Streak Stats Card -->
+          <div class="github-card reveal reveal-delay-2">
+            <div class="github-card-header">
+              <h5>GITHUB SUMMARY</h5>
+              <p>STREAK STATS</p>
             </div>
-            <div class="resume-item">
-              <h4>Fullstack Developer</h4>
-              <h5>September 2022 - April 2023</h5>
-              <p><em>PT Klik Data Indonesia</em></p>
-              <ul>
-                <li>I collaborate with a team to fulfill client needs in designing and developing applications.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Programmer Staff</h4>
-              <h5>August 2021 - August 2022</h5>
-              <p><em>PT Ubudiyah Indonesia</em></p>
-              <ul>
-                <li>Building Ubudiyah University Website.</li>
-                <li>Maintaining Ubudiyah University Website.</li>
-                <li>Creating ICT-related Reports Ubudiyah University Indonesia.</li>
-              </ul>
+            <div class="github-card-body stats-body">
+              <img src="https://github-readme-streak-stats.herokuapp.com/?user=zulfan14&theme=transparent&hide_border=true&ring=0ea5e9&fire=0ea5e9&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=9ca3af&sideLabels=9ca3af&dates=6b7280" alt="Zulfan's GitHub Streak Stats" />
             </div>
           </div>
         </div>
-
       </div>
-    </section><!-- End Resume Section -->
+    </section><!-- End GitHub Section -->
+
+    <!-- ======= Experience Section ======= -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Career Path</span>
+          <h2 class="section-title">Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span class="timeline-date">Feb 2026 — Present</span>
+            <h3 class="timeline-role">Operational Manager</h3>
+            <p class="timeline-company">PT Klik Data Indonesia</p>
+            <div class="timeline-desc">
+              <ul>
+                <li>Leading operational processes to ensure efficient delivery and project execution across teams.</li>
+                <li>Streamlining workflows and managing resources to optimize productivity and client satisfaction.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <span class="timeline-date">Sep 2025 — Feb 2026</span>
+            <h3 class="timeline-role">Project Manager</h3>
+            <p class="timeline-company">PT Klik Data Indonesia</p>
+            <div class="timeline-desc">
+              <ul>
+                <li>Managed multiple client projects end-to-end, ensuring timely delivery and quality standards.</li>
+                <li>Coordinated between development teams and stakeholders to align technical solutions with business requirements.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <span class="timeline-date">Aug 2024 — Sep 2025</span>
+            <h3 class="timeline-role">Backend Developer</h3>
+            <p class="timeline-company">PT Klik Data Indonesia</p>
+            <div class="timeline-desc">
+              <ul>
+                <li>Designed, developed, and optimized backend systems for web applications.</li>
+                <li>Executed API integrations, managed databases, and ensured seamless frontend-backend synchronization.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <span class="timeline-date">May 2023 — Aug 2024</span>
+            <h3 class="timeline-role">Backend Developer</h3>
+            <p class="timeline-company">PT Pma Madeindonesia</p>
+            <div class="timeline-desc">
+              <ul>
+                <li>Responsible for designing, developing, and optimizing backend systems that underpin applications or platforms.</li>
+                <li>Managed databases efficiently, including schema design, query optimization, and data security maintenance.</li>
+                <li>Collaborated with development teams and stakeholders to identify potential areas for performance improvement.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <span class="timeline-date">Sep 2022 — Apr 2023</span>
+            <h3 class="timeline-role">Fullstack Developer</h3>
+            <p class="timeline-company">PT Klik Data Indonesia</p>
+            <div class="timeline-desc">
+              <ul>
+                <li>Collaborated with a team to fulfill client needs in designing and developing applications.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <span class="timeline-date">Aug 2021 — Aug 2022</span>
+            <h3 class="timeline-role">Programmer Staff</h3>
+            <p class="timeline-company">PT Ubudiyah Indonesia</p>
+            <div class="timeline-desc">
+              <ul>
+                <li>Built and maintained Ubudiyah University Website.</li>
+                <li>Created ICT-related reports for Ubudiyah University Indonesia.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section-header reveal" style="margin-top: 60px;">
+          <span class="section-label">Education</span>
+          <h2 class="section-title">Academic Background</h2>
+        </div>
+
+        <div class="education-grid">
+          <div class="education-card reveal">
+            <h3 class="edu-degree">Bachelor of Technology Information</h3>
+            <p class="edu-school">Lhokseumawe State Polytechnic</p>
+            <p class="edu-date">August 2016 — August 2020</p>
+            <p class="edu-desc">Graduated with a GPA of 3.48, majoring in Computer Engineering with a focus on programming. Possessing practical skills in software development with a deep understanding of algorithms and programming.</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Experience Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>I take pride in showcasing several successful projects in my portfolio, notably making a significant contribution to web development. These achievements have not only garnered high appreciation from users but also reflect my dedication to quality and excellence in every aspect of project development.</p>
+    <section id="portfolio" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">My Work</span>
+          <h2 class="section-title">Portfolio</h2>
+          <p class="section-desc">A collection of web applications I've contributed to, showcasing my dedication to quality and excellence in development.</p>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/silapan.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>SILAPAN</h4>
-                <p>Web development</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/silapan.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="SILAPAN"><i class="bx bx-plus"></i></a>
-                  <a href="https://silapanacehjaya.co.id/" target="_blank" title="Portfolio Details"><i class="bx bx-link"></i></a>
+        <div class="portfolio-grid">
+          <div class="portfolio-card reveal reveal-delay-1">
+            <div class="portfolio-card-image">
+              <img src="assets/img/portfolio/simrs.png" alt="SIMRS KLIKMEDIC">
+              <div class="portfolio-card-overlay">
+                <div class="overlay-actions">
+                  <a href="assets/img/portfolio/simrs.png" class="portfolio-lightbox" data-gallery="portfolioGallery" title="SIMRS KLIKMEDIC" aria-label="Preview SIMRS KLIKMEDIC">
+                    <i class="bx bx-zoom-in"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener" aria-label="Visit SIMRS KLIKMEDIC">
+                    <i class="bx bx-link-external"></i>
+                  </a>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/sipenmasing.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>SIPENMASING</h4>
-                <p>Web development</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/sipenmasing.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="SIPENMASING"><i class="bx bx-plus"></i></a>
-                  <a href="https://sipenmasing.uui.ac.id//" target="_blank" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
+            <div class="portfolio-card-body">
+              <h4>SIMRS KLIKMEDIC</h4>
+              <p>Hospital Management System</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/lapor.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Lapor UUI</h4>
-                <p>Web development</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/lapor.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="LAPOR UUI"><i class="bx bx-plus"></i></a>
-                  <a href="https://lapor.uui.ac.id/" target="_blank" title="Portfolio Details"><i class="bx bx-link"></i></a>
+          <div class="portfolio-card reveal reveal-delay-2">
+            <div class="portfolio-card-image">
+              <img src="assets/img/portfolio/soya.png" alt="Soya Prima Solusi">
+              <div class="portfolio-card-overlay">
+                <div class="overlay-actions">
+                  <a href="assets/img/portfolio/soya.png" class="portfolio-lightbox" data-gallery="portfolioGallery" title="Soya Prima Solusi" aria-label="Preview Soya Prima">
+                    <i class="bx bx-zoom-in"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener" aria-label="Visit Soya Prima">
+                    <i class="bx bx-link-external"></i>
+                  </a>
                 </div>
               </div>
             </div>
+            <div class="portfolio-card-body">
+              <h4>Soya Prima Solusi</h4>
+              <p>Inventory & Sales Dashboard</p>
+            </div>
           </div>
 
+          <div class="portfolio-card reveal reveal-delay-3">
+            <div class="portfolio-card-image">
+              <img src="assets/img/portfolio/silapan.png" alt="SILAPAN">
+              <div class="portfolio-card-overlay">
+                <div class="overlay-actions">
+                  <a href="assets/img/portfolio/silapan.png" class="portfolio-lightbox" data-gallery="portfolioGallery" title="SILAPAN" aria-label="Preview SILAPAN">
+                    <i class="bx bx-zoom-in"></i>
+                  </a>
+                  <a href="https://silapanacehjaya.co.id/" target="_blank" rel="noopener" aria-label="Visit SILAPAN">
+                    <i class="bx bx-link-external"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card-body">
+              <h4>SILAPAN</h4>
+              <p>Web Development</p>
+            </div>
+          </div>
+
+          <div class="portfolio-card reveal reveal-delay-1">
+            <div class="portfolio-card-image">
+              <img src="assets/img/portfolio/sipenmasing.png" alt="SIPENMASING">
+              <div class="portfolio-card-overlay">
+                <div class="overlay-actions">
+                  <a href="assets/img/portfolio/sipenmasing.png" class="portfolio-lightbox" data-gallery="portfolioGallery" title="SIPENMASING" aria-label="Preview SIPENMASING">
+                    <i class="bx bx-zoom-in"></i>
+                  </a>
+                  <a href="https://sipenmasing.uui.ac.id/" target="_blank" rel="noopener" aria-label="Visit SIPENMASING">
+                    <i class="bx bx-link-external"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card-body">
+              <h4>SIPENMASING</h4>
+              <p>Web Development</p>
+            </div>
+          </div>
+
+          <div class="portfolio-card reveal reveal-delay-2">
+            <div class="portfolio-card-image">
+              <img src="assets/img/portfolio/lapor.png" alt="Lapor UUI">
+              <div class="portfolio-card-overlay">
+                <div class="overlay-actions">
+                  <a href="assets/img/portfolio/lapor.png" class="portfolio-lightbox" data-gallery="portfolioGallery" title="Lapor UUI" aria-label="Preview Lapor UUI">
+                    <i class="bx bx-zoom-in"></i>
+                  </a>
+                  <a href="https://lapor.uui.ac.id/" target="_blank" rel="noopener" aria-label="Visit Lapor UUI">
+                    <i class="bx bx-link-external"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card-body">
+              <h4>Lapor UUI</h4>
+              <p>Web Development</p>
+            </div>
+          </div>
         </div>
-
       </div>
     </section><!-- End Portfolio Section -->
 
@@ -323,34 +463,33 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <div class="footer-content">
+        <div class="footer-social">
+          <a href="https://github.com/zulfan14" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="https://www.instagram.com/mhzulfan/?hl=id" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/muhammad-zulfan/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+        </div>
+        <p class="footer-text">&copy; <span id="footerYear">2026</span> Muhammad Zulfan. All Rights Reserved.</p>
       </div>
     </div>
   </footer><!-- End Footer -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Back to top -->
+  <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- Vendor JS -->
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS -->
   <script src="assets/js/main.js"></script>
 
 </body>
