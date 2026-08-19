@@ -32,7 +32,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.label}
-                className="flex items-center justify-center w-10 h-10 rounded-full border border-[var(--card-border)] text-[var(--text-secondary)] text-base transition-all duration-300 hover:text-white hover:border-[#7c3aed] hover:bg-[#7c3aed]/15 hover:-translate-y-0.5"
+                className="flex items-center justify-center w-10 h-10 rounded-full border border-[var(--card-border)] text-[var(--text-secondary)] text-base transition-all duration-300 hover:text-[var(--accent-1)] hover:border-[var(--accent-1)] hover:bg-[var(--accent-1)]/10 hover:-translate-y-0.5"
               >
                 {social.icon}
               </a>
@@ -40,9 +40,18 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <p className="text-[var(--text-muted)] text-[0.85rem]">
+          <p className="text-[var(--text-muted)] text-[0.85rem] mb-4">
             © {year} Muhammad Zulfan. All Rights Reserved.
           </p>
+          
+          {/* Visitor Counter */}
+          <div className="flex justify-center opacity-80 hover:opacity-100 transition-opacity duration-300">
+            <img 
+              src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fzulfan14.github.io&count_bg=%2310b981&title_bg=%230f172a&icon=github.svg&icon_color=%23E7E7E7&title=visitors&edge_flat=false"
+              alt="Visitor Count" 
+              loading="lazy" 
+            />
+          </div>
         </div>
       </div>
     </footer>
