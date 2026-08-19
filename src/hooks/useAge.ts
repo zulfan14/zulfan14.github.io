@@ -1,0 +1,16 @@
+import { useMemo } from "react";
+
+export function useAge(birthday: Date): number {
+  return useMemo(() => {
+    const today = new Date();
+    let age = today.getFullYear() - birthday.getFullYear();
+    const monthDiff = today.getMonth() - birthday.getMonth();
+    if (
+      monthDiff < 0 ||
+      (monthDiff === 0 && today.getDate() < birthday.getDate())
+    ) {
+      age--;
+    }
+    return age;
+  }, [birthday]);
+}
