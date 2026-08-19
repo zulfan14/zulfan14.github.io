@@ -47,7 +47,7 @@ export default function Footer() {
           {/* Visitor Counter */}
           <div className="flex justify-center opacity-80 hover:opacity-100 transition-opacity duration-300">
             <img 
-              src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fzulfan14.github.io&count_bg=%2310b981&title_bg=%230f172a&icon=github.svg&icon_color=%23E7E7E7&title=visitors&edge_flat=false"
+              src="https://komarev.com/ghpvc/?username=zulfan14-portfolio&label=visitors&color=10b981&style=flat"
               alt="Visitor Count" 
               loading="lazy" 
             />
